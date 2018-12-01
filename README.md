@@ -4,7 +4,7 @@ Save game manager script. These scripts are for Windows OS.
 ## Requirements
 - Windows OS
 - WinRAR CLI
-- The game of course
+- The game obviously
 
 Download WinRAR CLI from [here](https://www.rarlab.com/download.htm).
 
