@@ -1,5 +1,5 @@
 # SAVE-MANAGER
-Save game manager script. These scripts are for Windows OS.
+Save game manager scripts. These scripts are for Windows OS.
 
 ## Requirements
 - Windows OS
