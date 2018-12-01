@@ -14,5 +14,5 @@ TASKLIST /fo:csv | FIND "%EXE%" && GOTO GAME /F || GOTO RUN
 :GAME
 TASKLIST /fo:csv | FIND "%EXE%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
 :SAVE
-DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" saveS0 saveS1 saveS2 saveS3 saveS4 saveS5 saveS6 saveS7
+DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" saveS0 saveS*
 EXIT
