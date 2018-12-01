@@ -17,5 +17,5 @@ TASKLIST /fo:csv | FIND "%EXE%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
 :SAVE
 DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" "%DIR%Double Dragon IV"
 EXPLORER ..\..\..\SAVE\Windows
-MSG "%UserName%" Verifica que DOUBLE DRAGON IV.sav no este corrupto.
+MSG "%UserName%" Verify save is not corrupted.
 EXIT
