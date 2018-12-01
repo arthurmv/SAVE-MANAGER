@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\ìåï˚è\éµï‡.sav"
+SET "SAVE=..\..\..\SAVE\Windows\Êù±ÊñπÂçÅ‰∏ÉÊ≠©.sav"
 SET "EXE=17walk.exe"
 RAR x -y -oni -- "%SAVE%"
 START %EXE%
