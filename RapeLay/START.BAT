@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\ƒŒƒCƒvƒŒƒC.sav"
+SET "SAVE=..\..\..\SAVE\Windows\ãƒ¬ã‚¤ãƒ—ãƒ¬ã‚¤.sav"
 SET "EXE=RapeLay.exe"
 SET "DIR=.\data\"
 RAR x -y -oni -- "%SAVE%" save "%DIR%"
