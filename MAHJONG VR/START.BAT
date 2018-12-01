@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\ñÉè´VR.sav"
+SET "SAVE=..\..\..\SAVE\Windows\È∫ªÂ∞ÜVR.sav"
 SET "EXE=MJ3D.exe"
 SET "DIR=%LocalAppData%\"
 RAR x -y -oni -- "%SAVE%" "%DIR%"
