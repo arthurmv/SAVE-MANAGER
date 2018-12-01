@@ -1,5 +1,5 @@
 # SAVE-MANAGER
-Save game manager scripts for keep some or all save games orderly and portable.
+Save game manager scripts for keep some or all save games orderly and portables.
 
 ## Requirements
 - Windows OS
