@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\sŽEIƒXƒsƒŠƒbƒc.sav"
+SET "SAVE=..\..\..\SAVE\Windows\è¡Œæ®ºï¼ã‚¹ãƒ”ãƒªãƒƒãƒ„.sav"
 SET "EXE=PTFight.exe"
 RAR x -y -oni -- "%SAVE%"
 START %EXE%
