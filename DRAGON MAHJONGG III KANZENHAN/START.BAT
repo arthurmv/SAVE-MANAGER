@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\DRAGON MAHJONGG III Å`äÆëSî≈Å`.sav"
+SET "SAVE=..\..\..\SAVE\Windows\DRAGON MAHJONGG III ÔΩûÂÆåÂÖ®ÁâàÔΩû.sav"
 SET "EXE=DM3.EXE"
 SET "DIR=.\"
 RAR x -y -oni -- "%SAVE%"
