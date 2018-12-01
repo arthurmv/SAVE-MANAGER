@@ -15,5 +15,6 @@ I recommend use portable paths or make environment variables for keep all portab
 
 - Find `SET PATH="..\..\..\Emulators\WinRAR x*"` and replace with your own **WinRAR** CLI path. Use diferent folders for x86 and x64 binaries.
 - Find `SET "SAVE=..\..\..\SAVE\Windows\*.sav"` and reaplce with your own **save** path.
+- Find `SET "DIR=..\Steam\userdata\*\"` and reaplce with your Steam user data folder path **Steam games only**.
 
 If you have same game but diferent game provider find `START steam://rungameid/*` or whatever you found with `START` command and reaplace with file name game or URL access like `dmmgameplayer://*/*/*/*`.
