@@ -5,7 +5,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\3DñÉêùó¥è†.sav"
+SET "SAVE=..\..\..\SAVE\Windows\3DÈ∫ªÈõÄÈæçÂå†.sav"
 SET "EXE=Ryusyou.exe"
 SET "DIR=.\"
 rar x -y -- -oni "%SAVE%" "%DIR%"
