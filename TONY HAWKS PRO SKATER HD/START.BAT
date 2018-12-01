@@ -1,0 +1,24 @@
+TASKLIST /NH /FI "WINDOWTITLE EQ SAVE MANAGER" | FIND "cmd" && EXIT /F || TITLE SAVE MANAGER
+IF "%PROCESSOR_ARCHITECTURE%"=="AMD64" GOTO 64
+:32
+SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
+:64
+SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
+:START
+FOR /F "tokens=3" %%G IN ('REG QUERY "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal"') DO (SET MyDoc=%%G)
+SET "SAVE=..\..\..\SAVE\Windows\TONY HAWK'S PRO SKATER HD.sav"
+SET "EXE=THHDGame.exe"
+SET "DIR1=.\Binaries\Win32\"
+SET "DIR2=%MyDoc%\My Games\"
+RAR x -y -oni -- "%SAVE%" THPSHD "%DIR1%"
+RAR x -y -oni -- "%SAVE%" "Tony Hawk Pro Skater HD" "%DIR2%"
+CD Binaries\Win32
+START %EXE%
+:RUN
+TASKLIST /fo:csv | FIND "%EXE%" && GOTO GAME /F || GOTO RUN
+:GAME
+TASKLIST /fo:csv | FIND "%EXE%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
+:SAVE
+CD ..\..
+DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" "%DIR1%THPSHD" "%DIR2%Tony Hawk Pro Skater HD"
+EXIT
