@@ -6,7 +6,7 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
 FOR /F "tokens=3" %%G IN ('REG QUERY "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal"') DO (SET MyDoc=%%G)
-SET "SAVE=..\..\..\SAVE\Windows\ñ≥ëoOROCHI Z.sav"
+SET "SAVE=..\..\..\SAVE\Windows\ÁÑ°ÂèåOROCHI Z.sav"
 SET "EXE=OROCHI_Z.exe"
 SET "DIR=%MyDoc%\KOEI\"
 RAR x -y -oni -- "%SAVE%" "%DIR%"
