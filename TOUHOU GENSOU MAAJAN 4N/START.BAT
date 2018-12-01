@@ -5,15 +5,15 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 :64
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
-SET "SAVE=..\..\..\SAVE\Windows\“Œ•ûŒ¶‘z–ƒ4N.sav"
+SET "SAVE=..\..\..\SAVE\Windows\æ±æ–¹å¹»æƒ³éº»é›€4N.sav"
 SET "EXE=thmj4n.exe"
 SET "DIR=%AppData%\D.N.A. Softwares\"
-RAR x -y -oni -- "%SAVE%" “Œ•ûŒ¶‘z–ƒ4 "%DIR%"
+RAR x -y -oni -- "%SAVE%" æ±æ–¹å¹»æƒ³éº»é›€4 "%DIR%"
 START %EXE%
 :RUN
 TASKLIST /fo:csv | FIND "%EXE%" && GOTO GAME /F || GOTO RUN
 :GAME
 TASKLIST /fo:csv | FIND "%EXE%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
 :SAVE
-DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" "%DIR%“Œ•ûŒ¶‘z–ƒ4"
+DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" "%DIR%æ±æ–¹å¹»æƒ³éº»é›€4"
 EXIT
