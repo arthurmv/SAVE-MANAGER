@@ -6,20 +6,14 @@ SET PATH="..\..\..\Emulators\WinRAR x86";%PATH% && GOTO START
 SET PATH="..\..\..\Emulators\WinRAR x64";%PATH%
 :START
 SET "SAVE=..\..\..\SAVE\Windows\SNIPER ELITE III.sav"
-SET "EXE1=SniperElite3.exe"
-SET "EXE2=GSLauncher.exe"
+SET "EXE=GSLauncher.exe"
 SET "DIR=%UserProfile%\Saved Games\GameSessions\"
 RAR x -y -oni -- "%SAVE%" "Sniper Elite 3" "%DIR%"
 START LaunchGame.lnk
 :BOOT
-TASKLIST /fo:csv | FIND "%EXE2%" && GOTO RUN /F || GOTO BOOT
-:RUN
-TASKLIST /fo:csv | FIND "%EXE2%" || GOTO SAVE
-TASKLIST /fo:csv | FIND "%EXE1%" || GOTO RUN
-:EXIT_LAUNCHER
-TASKKILL /IM %EXE2% /F
+TASKLIST /fo:csv | FIND "%EXE%" && GOTO GAME /F || GOTO BOOT
 :GAME
-TASKLIST /fo:csv | FIND "%EXE1%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
+TASKLIST /fo:csv | FIND "%EXE%" && TIMEOUT /T 3 && GOTO GAME /F || GOTO SAVE
 :SAVE
 DEL /f /q "%SAVE%" && RAR m -y -ep1 -- "%SAVE%" "%DIR%Sniper Elite 3"
 EXIT
